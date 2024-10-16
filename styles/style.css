@@ -1,5 +1,4 @@
 .header {
-  background: #f0f0f0;
   padding: 92px 52px;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -17,18 +16,27 @@
   list-style: none;
 }
 
+.header__link{
+    text-decoration: underline;
+}
+
 .header__logo {
   width: 130px;
 }
 
-.header__address {
-  margin-left: auto;
+.header__address,
+.footer__address {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.header__address address {
+.header__address{
+    margin-left: auto;
+}
+
+.header__address address,
+.footer__address address {
   font-style: inherit;
 }
 
@@ -112,6 +120,7 @@
   text-transform: inherit;
   border: #fff solid 1px;
   padding: 12px 32px;
+  cursor: pointer;
 }
 
 .lots {
@@ -152,12 +161,12 @@
 }
 
 .card > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    z-index: -2;
-    object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: -2;
+  object-fit: cover;
 }
 
 .card__title {
@@ -170,10 +179,63 @@
   font-size: 20px;
 }
 
+.lots__look-more-link {
+  display: block;
+  font-size: 20px;
+  padding: 27px 40px 40px 40px;
+  text-decoration: underline;
+}
 
-.lots__look-more-link{
-    display: block;
-    font-size: 20px;
-    padding: 27px 40px 40px 40px;
-    text-decoration: underline;
+.about {
+  padding: calc(35px + 146px) 24px 0 24px;
+  display: flex;
+  gap: 72px;
+}
+
+.about__logo {
+  border-radius: 50%;
+  background: #000;
+  width: 240px;
+  height: 240px;
+  padding: 64px 46px 0 46px;
+}
+
+.about__title {
+  text-transform: uppercase;
+  font-size: 40px;
+  height: 240px;
+  display: flex;
+  align-items: center;
+}
+
+.about__text {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 180px 50px 80px 50px;
+}
+
+.footer__menu-list{
+    list-style: none;
+    text-align: center;
+}
+
+.footer__menu-link_active{
+    text-decoration: none;
+}
+
+.footer__social-list{
+    list-style: none;
+    display: flex;
+    gap: 48px;
+}
+.footer__social-list-item{
+    width: 48px;
 }
