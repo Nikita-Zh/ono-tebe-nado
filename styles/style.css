@@ -73,8 +73,7 @@
 .cover__title {
   font-size: 100px;
   font-weight: bold;
-  padding-top: 115px;
-  line-height: 115px;
+  line-height: 124px;
   letter-spacing: 30px;
   padding: 165px 50px 0 50px;
 }
@@ -170,21 +169,23 @@
   text-transform: uppercase;
   text-decoration: underline;
   font-size: 22px;
+  line-height: 122%;
 }
 
 .card__text {
   font-size: 20px;
+  line-height: 120%;
 }
 
 .lots__look-more-link {
   display: block;
   font-size: 20px;
-  padding: 27px 40px 40px 40px;
+  padding: 27px 40px 0px 40px;
   text-decoration: underline;
 }
 
 .about {
-  padding: calc(35px + 146px) 24px 0 24px;
+  padding: calc(35px + 146px) 24px 0 71px;
   display: flex;
   gap: 72px;
 }
