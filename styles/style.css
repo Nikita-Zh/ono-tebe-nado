@@ -1,9 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   padding: 92px 52px;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   font-size: 18px;
 }
+
 .header__links-list {
   list-style: circle inside;
   display: flex;
@@ -16,8 +21,8 @@
   list-style: none;
 }
 
-.header__link {
-  text-decoration: underline;
+.header__link_active {
+  text-decoration: none;
 }
 
 .header__logo {
